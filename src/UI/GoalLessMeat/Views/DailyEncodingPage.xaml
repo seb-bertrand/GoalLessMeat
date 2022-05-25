@@ -3,9 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="GoalLessMeat.Views.DailyEncodingPage"
              Title="Today">
-    <StackLayout>
-        <Label Text="TODO : Daily Encoding view"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+    <StackLayout Spacing="15">
+        <Label Text="What did you eat today?"
+               SemanticProperties.HeadingLevel="Level1"
+               FontSize="32"
+               Margin="15"
+               HorizontalOptions="Center"/>
+        <HorizontalStackLayout Spacing="15" HorizontalOptions="Center" VerticalOptions="Center">
+            <Button Text="Meat based meal" Background="#C62828" TextColor="White" WidthRequest="150" HeightRequest="50" />
+            <Button Text="Vegetarian meal" Background="#F9A825" TextColor="White" WidthRequest="150"  HeightRequest="50" />
+            <Button Text="Vegan meal" Background="#2E7D32" TextColor="White" WidthRequest="150" HeightRequest="50" />
+        </HorizontalStackLayout>
+       
     </StackLayout>
 </ContentPage>
