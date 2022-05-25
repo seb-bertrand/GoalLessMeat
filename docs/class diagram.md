@@ -18,7 +18,7 @@ classDiagram
     }
     class DailyMeal {
         + int Id
-        + DateTime DateOfConsumption
+        + DateOnly DateOfConsumption
         + MealType MealType
         + DailyMeal(DateTime dateOfConsumption, MealType mealType)
         + ToString()
