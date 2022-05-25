@@ -46,6 +46,12 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <None Remove="Views\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Views\" />
+	</ItemGroup>
+	<ItemGroup>
 	  <ProjectReference Include="..\..\Core\GoalLessMeat.Domain\GoalLessMeat.Domain.csproj" />
 	</ItemGroup>
 </Project>
