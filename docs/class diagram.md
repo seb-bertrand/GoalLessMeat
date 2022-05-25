@@ -6,9 +6,9 @@ classDiagram
     DailyMeal -- MealType
 
     class User {
-        # int Id
-        # string Firstname
-        # string Lastname
+        + int Id
+        + string Firstname
+        + string Lastname
         + User(string firstname, string lastname)
         + ToString()
         + GetConsumptionPercentageByMealType(MealType mealType)
@@ -17,9 +17,9 @@ classDiagram
         + DeleteDailyMeal(DailyMeal mealToDelete)
     }
     class DailyMeal {
-        # int Id
-        # DateTime DateOfConsumption
-        # MealType MealType
+        + int Id
+        + DateTime DateOfConsumption
+        + MealType MealType
         + DailyMeal(DateTime dateOfConsumption, MealType mealType)
         + ToString()
         + UpdateMealType(MealType mealType)
