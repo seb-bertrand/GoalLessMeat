@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Shell
     x:Class="GoalLessMeat.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
@@ -6,14 +6,14 @@
     xmlns:views="clr-namespace:GoalLessMeat.Views"
     Shell.FlyoutBehavior="Disabled">
     <TabBar Shell.TabBarForegroundColor="{StaticResource Primary}" >
-       <Tab Title="Today">
-           <ShellContent ContentTemplate="{DataTemplate views:DailyEncodingPage}" />
-       </Tab>
-       <Tab Title="Calendar">
-           <ShellContent ContentTemplate="{DataTemplate views:CalendarPage}" />
-       </Tab>
+        <Tab Title="Today">
+            <ShellContent ContentTemplate="{DataTemplate views:DailyEncodingPage}" />
+        </Tab>
+        <Tab Title="Calendar">
+            <ShellContent ContentTemplate="{DataTemplate views:CalendarPage}" />
+        </Tab>
         <Tab Title="Statistics">
-           <ShellContent ContentTemplate="{DataTemplate views:StatisticsPage}" />
-       </Tab>
+            <ShellContent ContentTemplate="{DataTemplate views:StatisticsPage}" />
+        </Tab>
     </TabBar>
 </Shell>

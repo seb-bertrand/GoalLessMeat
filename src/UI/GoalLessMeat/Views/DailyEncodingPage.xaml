@@ -4,8 +4,12 @@
              x:Class="GoalLessMeat.Views.DailyEncodingPage"
              Title="Today">
     <StackLayout>
-        <Label Text="TODO : Daily Encoding view"
-                VerticalOptions="Center" 
-                HorizontalOptions="Center" />
+        <Label Text="What did you eat today?" Style="{StaticResource Header1LabelStyle}"/>
+        <VerticalStackLayout>
+            <Button Text="Vegan" Style="{StaticResource VeganButtonStyle}" />
+            <Button Text="Vegetarian" Style="{StaticResource VegetarianButtonStyle}" />
+            <Button Text="Fish based" Style="{StaticResource FishButtonStyle}" />
+            <Button Text="Meat based" Style="{StaticResource MeatButtonStyle}" />
+        </VerticalStackLayout>
     </StackLayout>
 </ContentPage>
