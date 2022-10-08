@@ -13,7 +13,8 @@ namespace GoalLessMeat.Persistence
     {
         public static IServiceCollection AddPersistenceServices(this IServiceCollection services)
         {
-            services.AddSingleton<IAsyncRepository<DailyMeal>, AsyncRepository<DailyMeal>>();
+            services.AddSingleton<IAsyncRepository<DailyMeal>, AsyncRepository<DailyMeal>>()
+                .AddSingleton<IDailyMealRepository, DailyMealRepository>();
             return services;
         }
     }
