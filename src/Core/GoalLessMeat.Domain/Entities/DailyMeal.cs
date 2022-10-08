@@ -1,17 +1,19 @@
 ﻿using System;
+using GoalLessMeat.Domain.Common;
 using GoalLessMeat.Domain.Enums;
 
 namespace GoalLessMeat.Domain.Entities
 {
-	public class DailyMeal
-	{
-		public int? Id { get; set; }
+	public class DailyMeal : IAggregateRoot
+{
+		public Guid Id { get; set; }
 		public DateOnly DateOfConsumption { get; set; }
-		public MealType? MealType { get; set; }
+		public MealType MealType { get; set; }
 
-        public DailyMeal()
+        public DailyMeal(MealType mealType)
         {
-			DateOfConsumption = DateOnly.FromDateTime(DateTime.Now);
+            MealType = mealType;
+            DateOfConsumption = DateOnly.FromDateTime(DateTime.Now);
         } 
 	}
 }
