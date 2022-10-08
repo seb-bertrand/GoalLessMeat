@@ -16,7 +16,7 @@ namespace GoalLessMeat.AppLogic.Features.DailyMeal.Commands.AddTodaysMeal
 
     public class AddTodaysMealCommandHandler : IRequestHandler<AddTodaysMealCommand, AddTodaysMealCommandResponse>
     {
-        private IAsyncRepository<Domain.Entities.DailyMeal> _dailyMealRepository;
+        private readonly IAsyncRepository<Domain.Entities.DailyMeal> _dailyMealRepository;
 
         public AddTodaysMealCommandHandler(IAsyncRepository<Domain.Entities.DailyMeal> dailyMealRepository)
         {
