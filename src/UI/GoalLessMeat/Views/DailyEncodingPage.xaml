@@ -1,15 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:GoalLessMeat.ViewModels"
              x:Class="GoalLessMeat.Views.DailyEncodingPage"
-             Title="Today">
+             Title="Today" 
+             x:DataType="viewModels:DailyEncodingViewModel"
+             xmlns:domainEnums="clr-namespace:GoalLessMeat.Domain.Enums;assembly=GoalLessMeat.Domain">           
     <StackLayout>
         <Label Text="What did you eat today?" Style="{StaticResource Header1LabelStyle}"/>
         <VerticalStackLayout>
-            <Button Text="Vegan" Style="{StaticResource VeganButtonStyle}" />
-            <Button Text="Vegetarian" Style="{StaticResource VegetarianButtonStyle}" />
-            <Button Text="Fish based" Style="{StaticResource FishButtonStyle}" />
-            <Button Text="Meat based" Style="{StaticResource MeatButtonStyle}" />
+            <Button Text="Vegan" Style="{StaticResource VeganButtonStyle}" Command="{x:Binding AddMealCommand}">
+              <Button.CommandParameter>
+                  <domainEnums:MealType>Vegan</domainEnums:MealType>
+              </Button.CommandParameter>
+            </Button>
+            <Button Text="Vegetarian" Style="{StaticResource VegetarianButtonStyle}" Command="{x:Binding AddMealCommand}">
+                <Button.CommandParameter>
+                    <domainEnums:MealType>Vegetarian</domainEnums:MealType>
+                </Button.CommandParameter>
+            </Button>
+            <Button Text="Fish based" Style="{StaticResource FishButtonStyle}" Command="{x:Binding AddMealCommand}">
+                <Button.CommandParameter>
+                    <domainEnums:MealType>FishBased</domainEnums:MealType>
+                </Button.CommandParameter>
+            </Button>
+            <Button Text="Meat based" Style="{StaticResource MeatButtonStyle}" Command="{x:Binding AddMealCommand}" >
+                <Button.CommandParameter>
+                    <domainEnums:MealType>MeatBased</domainEnums:MealType>
+                </Button.CommandParameter>
+            </Button>
         </VerticalStackLayout>
     </StackLayout>
 </ContentPage>

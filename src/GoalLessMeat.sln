@@ -5,13 +5,17 @@ VisualStudioVersion = 17.4.32916.344
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{539AC2FD-4171-4A67-8780-C96456F23BB3}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Persistence", "Persistence", "{225159B1-0198-489A-A113-42ABA9D870DD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{225159B1-0198-489A-A113-42ABA9D870DD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{D1AC313E-A957-47D2-A9EF-8BAB2EAFB475}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoalLessMeat", "UI\GoalLessMeat\GoalLessMeat.csproj", "{FEA6B260-FBAF-41C7-BAF9-742A2E7239E8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalLessMeat.Domain", "Core\GoalLessMeat.Domain\GoalLessMeat.Domain.csproj", "{F479D82F-97BA-4129-8420-4100EF43EA94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoalLessMeat.Domain", "Core\GoalLessMeat.Domain\GoalLessMeat.Domain.csproj", "{F479D82F-97BA-4129-8420-4100EF43EA94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalLessMeat.AppLogic", "Core\GoalLessMeat.Application\GoalLessMeat.AppLogic\GoalLessMeat.AppLogic.csproj", "{F067A27F-3F01-46C8-AFA8-297D2737E548}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoalLessMeat.Persistence", "Infrastructure\GoalLessMeat.Persistence\GoalLessMeat.Persistence.csproj", "{BC7BD456-26BE-4107-A937-5A04613987AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -28,6 +32,14 @@ Global
 		{F479D82F-97BA-4129-8420-4100EF43EA94}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F479D82F-97BA-4129-8420-4100EF43EA94}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F479D82F-97BA-4129-8420-4100EF43EA94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F067A27F-3F01-46C8-AFA8-297D2737E548}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F067A27F-3F01-46C8-AFA8-297D2737E548}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F067A27F-3F01-46C8-AFA8-297D2737E548}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F067A27F-3F01-46C8-AFA8-297D2737E548}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC7BD456-26BE-4107-A937-5A04613987AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC7BD456-26BE-4107-A937-5A04613987AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC7BD456-26BE-4107-A937-5A04613987AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC7BD456-26BE-4107-A937-5A04613987AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -35,6 +47,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FEA6B260-FBAF-41C7-BAF9-742A2E7239E8} = {D1AC313E-A957-47D2-A9EF-8BAB2EAFB475}
 		{F479D82F-97BA-4129-8420-4100EF43EA94} = {539AC2FD-4171-4A67-8780-C96456F23BB3}
+		{F067A27F-3F01-46C8-AFA8-297D2737E548} = {539AC2FD-4171-4A67-8780-C96456F23BB3}
+		{BC7BD456-26BE-4107-A937-5A04613987AC} = {225159B1-0198-489A-A113-42ABA9D870DD}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {97F3E92E-8958-4450-BB4C-361383F061D4}

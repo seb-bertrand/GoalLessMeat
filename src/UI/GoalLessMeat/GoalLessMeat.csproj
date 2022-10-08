@@ -49,7 +49,15 @@
 	</ItemGroup>
 
 	<ItemGroup>
+		<PackageReference Include="CommunityToolkit.Mvvm" Version="8.0.0" />
+		<PackageReference Include="MediatR" Version="11.0.0" />
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0-rc.1.22426.10" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Core\GoalLessMeat.Application\GoalLessMeat.AppLogic\GoalLessMeat.AppLogic.csproj" />
+	  <ProjectReference Include="..\..\Core\GoalLessMeat.Domain\GoalLessMeat.Domain.csproj" />
+	  <ProjectReference Include="..\..\Infrastructure\GoalLessMeat.Persistence\GoalLessMeat.Persistence.csproj" />
 	</ItemGroup>
 
 </Project>
