@@ -1,6 +1,6 @@
 # Goal: Less meat
 
-Meat production is one of the highest source of CO2 emission. This app helps you track your meat consumption and challenge you to reduce it.
+Meat production is one of the highest source of CO2 emissions. This app helps you track your meat consumption and challenge you to reduce it.
 
 ## Features
 
@@ -11,9 +11,12 @@ Meat production is one of the highest source of CO2 emission. This app helps you
 
 Each day encode what type of meal you had:
 
-- Meat based
-- Vegetarian
 - Vegan
+- Vegetarian
+- Fish based
+- Meat based
+
+
 
 ## Calendar view
 
@@ -25,4 +28,4 @@ See on a calendar what type of meal you have had over different time period:
 
 ## Statistics
 
-See how you did in the different
+See how you did up until now. 
