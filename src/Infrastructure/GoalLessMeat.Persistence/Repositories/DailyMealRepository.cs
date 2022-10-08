@@ -18,8 +18,8 @@ namespace GoalLessMeat.Persistence.Repositories
             using var db = new LiteDatabase(DB_PATH);
             var collection = db.GetCollection<DailyMeal>(_collectionName);
             collection.EnsureIndex(dm => dm.DateOfConsumption);
-            var filter = DateOnly.FromDateTime(DateTime.Now);
-            var result = collection.Query().Where(dm => dm.DateOfConsumption == filter).FirstOrDefault();
+            var currentDate = DateOnly.FromDateTime(DateTime.Now);
+            var result = collection.FindOne(dm => dm.DateOfConsumption == currentDate);
             return result;
         }
     }
